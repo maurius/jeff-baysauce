@@ -1,0 +1,81 @@
+body{
+  background-image: url(file:///C:/Users/mariu/OneDrive/Documents/program/nettside1/image1.jpg);
+  background-position: 100%;  
+}
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+P {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.row::after { /*natinoal greorg*/
+
+  background-color: crimson;
+  
+  content: "natinoal greorg";
+  text-transform: uppercase;
+  text-shadow: 5px 3px cyan;
+  clear: both;
+  display: grid;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  animation: mymove 1.1s infinite;
+
+  object-fit: none;
+  object-position: 10px;
+
+  border-style: dotted;
+  border-color: blue;
+}
+.backround { /*background*/
+  border-radius: 100%;
+  background: rgb(47, 109, 101);
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+#rcorners1 { /* jeff basos square */
+    background: rgb(141, 141, 199); /* square size & color*/
+    width: 200px;
+    height: 150px; 
+    padding: 100px;
+    
+    text-align: right; /*aligns text*/
+    text-shadow: 5px 3px cyan;
+
+    border-style: dashed; /*border effects*/
+    border-width: 20px;
+    border-radius: 20px;
+    border-color: yellow;
+  }
+[class*="col-"] { /* top boxes */
+  background-color: gray;
+  float: right;
+  padding: 15px;
+  border: 20px solid gold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  animation: mymove 0.1s infinite;
+  opacity: 72%;
+}
+#rcorners2 { /*clout*/
+  float: center;
+  border-radius: 13px;
+  background: rgb(24, 24, 83);
+  text-align: right;
+  text-shadow: 5px 3px cyan;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  border-style: groove;
+  border-width: 20px;
+  opacity: 48%;
+}
+
+@keyframes mymove {
+  50% {color:red;}
+  50% {opacity: 0%;}
+}
